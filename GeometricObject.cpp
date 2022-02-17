@@ -87,7 +87,8 @@ namespace RTC
 
 			s.hit_t.first = t1;
 			s.hit_t.second = t2;
-			s.hit_points.first = ray.get_origin() + t1 * ray.get_direction();
+			//No need for next two lines. Computed in prepre_computations
+			s.hit_points.first = ray.get_origin() + t1 * ray.get_direction(); 
 			s.hit_points.second = ray.get_origin() + t2 * ray.get_direction();
 
 			s.num_hits = 2;
