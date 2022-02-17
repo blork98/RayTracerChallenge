@@ -106,20 +106,20 @@ namespace RTC
 				s.num_hits += 1;
 			*/
 
-			if (t1 > kEpsilon) {
-				tmin = t1;
-				s.hit_point = ray.get_origin() + t1 * ray.get_direction();
-				//return (true);
-			}
+			//if (t1 > kEpsilon) {
+			//	tmin = t1;
+			//	s.hit_point = ray.get_origin() + t1 * ray.get_direction();
+			//	//return (true);
+			//}
 
-			if (t2 > kEpsilon) {				
-				if (t1 < kEpsilon)
-				{
-					s.hit_point = ray.get_origin() + t2 * ray.get_direction();
-					tmin = t2;
-				}
+			//if (t2 > kEpsilon) {				
+			//	if (t1 < kEpsilon)
+			//	{
+			//		s.hit_point = ray.get_origin() + t2 * ray.get_direction();
+			//		tmin = t2;
+			//	}
 				//return (true);
-			}
+			//}
 
 			return true;
 		}
